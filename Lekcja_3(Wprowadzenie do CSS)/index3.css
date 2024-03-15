@@ -1,0 +1,20 @@
+#intro {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btw {
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+h1{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.outlined-text{
+    font-family: cursive;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}

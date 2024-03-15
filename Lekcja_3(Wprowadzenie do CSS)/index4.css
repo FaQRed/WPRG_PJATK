@@ -1,0 +1,14 @@
+ol{
+    color: red;
+}
+ul{
+    list-style-type: disc;
+}
+
+
+ol.number{
+    list-style-type: decimal;
+}
+ul.none{
+    list-style-type: none;
+}

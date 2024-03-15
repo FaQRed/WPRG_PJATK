@@ -1,0 +1,11 @@
+div > span {
+    color: red;
+}
+
+ul > li {
+    background-color: lightblue;
+}
+
+nav > a {
+    color: green;
+}

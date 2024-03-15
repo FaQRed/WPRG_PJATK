@@ -1,0 +1,20 @@
+body{
+    background-color: blue;
+    color: white;
+}
+
+
+h1{
+    text-shadow: 2px 2px gray;
+
+}
+
+h1,h2,h3{
+    font-size: 24px;
+}
+
+a{
+    color: red;
+    font-weight: bold;
+
+}

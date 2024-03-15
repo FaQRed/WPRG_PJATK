@@ -1,0 +1,16 @@
+div{
+    width: 200px;
+    height: 200px;
+}
+
+div.box1{
+    background-color: rgb(255,0,0);
+}
+
+h1{
+    color: rgba(255,255,255,80%);
+}
+
+div.box2{
+    background-color: hsla(240, 100%, 50%, 0.5);
+}
