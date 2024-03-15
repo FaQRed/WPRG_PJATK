@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 7</title>
-
-    <style>
-        table, th, td {
-            border: 1px solid black;
-
-        }
-
-    </style>
 </head>
 <body>
-
 <table>
-
-    <thead>
+    <caption>Tabela przykładowa</caption>
+    <colgroup span="2" style="background-color: yellow"></colgroup>
+    <colgroup span="2" style="background-color: lightblue"></colgroup>
     <tr>
         <th rowspan="2">Grupa A</th>
         <th colspan="2">Mecz 1</th>
@@ -28,9 +20,6 @@
         <th>Drużyna 1</th>
         <th>Drużyna 2</th>
     </tr>
-    </thead>
-
-    <tbody>
     <tr>
         <td rowspan="2">Rosja</td>
         <td>1</td>
@@ -44,7 +33,6 @@
         <td>0</td>
         <td>0</td>
     </tr>
-
     <tr>
         <td rowspan="2">Polska</td>
         <td>0</td>
@@ -58,49 +46,36 @@
         <td>1</td>
         <td>1</td>
     </tr>
-
     <tr>
-        <td colspan="5">
-
-
-            <table>
-                <thead>
-                <tr>
-                    <th>Imię</th>
-                    <th>Nazwisko</th>
-                    <th>Wiek</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>Jan</td>
-                    <td>Kowalski</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Anna</td>
-                    <td>Nowak</td>
-                    <td>30</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                Przykladowa zagnieżdżona tabela
-                </tfoot>
-            </table>
+        <td colspan="4"><table>
+            <caption>Przykładowa zagnieżdżona tabela</caption>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td>Kowalski</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>Nowak</td>
+                <td>30</td>
+            </tr>
+        </table>
         </td>
     </tr>
-    </tbody>
-
-<tr>
-    <td rowspan="2">Razem</td>
-    <td>4</td>
-    <td>4</td>
-    <td>2</td>
-    <td>2</td>
-</tr>
-
+    <tr>
+        <td colspan="2">Razem</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
 </table>
+
 
 
 </body>
