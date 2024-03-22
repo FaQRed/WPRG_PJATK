@@ -1,0 +1,10 @@
+.wrapper {
+    text-align: center;
+}
+.text {
+    display: inline-block;
+}
+.left, .right {
+    width: 50%;
+    float: left;
+}
