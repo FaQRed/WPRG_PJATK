@@ -1,0 +1,85 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: lightgray;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+td[data-grade="5.0"] {
+    color: purple;
+}
+
+
+td[data-grade="4.5"] {
+    color: blue;
+}
+
+
+td[data-grade="4.0"] {
+    color: lightcoral;
+}
+
+
+td[data-grade="3.5"] {
+    color: green;
+}
+
+
+td[data-grade="3.0"] {
+    color: orange;
+}
+
+
+td[data-grade="2.5"] {
+    color: chartreuse;
+}
+
+
+td[data-grade="2.0"] {
+    color: darkgoldenrod;
+}
+
+
+td[data-grade="1.0"] {
+    color: red;
+    content: "1.0";
+}
+
+
+td:first-child::before {
+    content: "Nr ";
+}
+td:last-child::before {
+    content: "Ocena: ";
+}
+
+tr:last-child {
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: lightgrey;
+}
