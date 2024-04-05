@@ -1,0 +1,27 @@
+
+.box {
+    background-color: green;
+    box-shadow: 0 0 5px  black;
+    position: absolute;
+}
+
+.green_1 {
+    top: 30px;
+    left: 100px;
+    height: 100px;
+    width: 200px;
+}
+
+.green_2{
+    top: 72px;
+    left: 930px;
+    height: 145px;
+    width: 145px;
+}
+
+.green_3{
+    top: 360px;
+    left: 480px;
+    height: 230px;
+    width: 100px;
+}
