@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: absolute;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            background-color: rgba(0, 0, 0, .4);
+            color: white;
+            z-index: 1;
+        }
+
+        .nav-item {
+            flex: 1;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(0, 0, 0, .3);;
+        }
+
+        .nav-item * {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .banner {
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            z-index: -1;
+            position: static;
+            left: 0;
+        }
+
+        .banner-image {
+            display: inline;
+        }
+
+        .banner-text {
+            position: absolute;
+            left: 0;
+            display: inline;
+            top: 10px;
+            width: 100%;
+            margin-top: 20%;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 30px auto;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex: 1 1 0;
+            justify-content: space-between;
+        }
+
+        .box {
+            flex: 1 1 0;
+            min-width: 400px;
+            min-height: 400px;
+        }
+
+        .box p, .box h2 {
+            padding: 10px;
+        }
+
+
+        .box-image {
+            width: 100%;
+            height: 20vw;
+            background-color: #CDB591;
+            text-align: center;
+        }
+
+        .box-image img {
+            height: 100%;
+            width: unset;
+            max-width: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .box-image p {
+            position: relative;
+            bottom: 52px;
+            z-index: 1;
+            color: white;
+            align-self: end;
+            padding: 10px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .shadow {
+            box-shadow: lightgray 0px 0px 2px 2px;
+        }
+    </style>
+</head>
+<body>
+<nav class="shadow">
+    <div class="nav-item ">
+        <h1 class="nav-item">Duskwood</h1>
+    </div>
+    <a href="#mobs" class="nav-item">
+        <p>Mobs</p>
+    </a>
+    <a href="#locations" class="nav-item">
+        <p>Locations</p>
+    </a>
+    <a href="#citizens" class="nav-item">
+        <p>Citizens</p>
+    </a>
+</nav>
+<div class="banner">
+    <img src="https://wow.zamimg.com/uploads/screenshots/normal/871662-duskwood-path-between-the-yorgen-farmstead-and-the-rotting-orchard.jpg"
+         alt="dark forest" class="banner-image">
+    <div class="banner-text">
+        <h1>Entering Duskwood?</h1>
+        <p>Be careful explorer there is no turning back. Once entered you will never be able to exit...</p>
+        <h3 style="font-size: 30px"><a href="http://szuflandia.pjwstk.edu.pl/~s29743/">[LINK DO STRONY NA SZUFLANDI DO ZOBACZENIA NA PEŁNYM EKRANIE]</a></h3>
+    </div>
+</div>
+<div class="container">
+    <div class="box shadow" id="mobs">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/785-emeriss.jpg" alt="green dragon">
+            <p class="right">2006/12/06</p>
+        </div>
+        <h2>Emeris / Lethon / Taerar / Ysondre</h2>
+        <p>Four of Ysera's lieutenants of the green dragon flight who fell prey to the corruption of the Emerald
+            Nightmare.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/73827-morladim.jpg" alt="Mor'Ladim">
+            <p class="right">2008/03/04</p>
+        </div>
+        <h2>Mor'Ladim</h2>
+        <p>Undead wanders throughout Duskwood, following a strange and meandering path through the cemetery.</p>
+    </div>
+
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/76956-fenros.jpg" alt="Fenros">
+            <p class="right">2008/03/24</p>
+        </div>
+        <h2>Fenros</h2>
+        <p>Rare werewolf that can be found in a camp west of Darkshire. He have Tribal Worg Helm and Ravenwood Bow.</p>
+    </div>
+
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/63719-stitches.jpg" alt="Stitches">
+            <p class="right">2007/11/19 </p>
+        </div>
+        <h2>Stitches</h2>
+        <p>Some kind of frankenstein like monster that roam around Duskwood.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/76958-commander-felstrom.jpg"
+                 alt="Commander Felstrom">
+            <p class="right">2008/03/24</p>
+        </div>
+        <h2>Commander Felstrom</h2>
+        <p>Rare mob that can be seen above graveyard close to Elwynn Forest and Westfall.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/73826-morbent-fel.jpg" alt="Morbent Fel">
+            <p class="right">2008/03/04</p>
+        </div>
+        <h2>Morbent Fel</h2>
+        <p>Warlock that live next to graveyard and keep rising corpses to live and that make every Darkwood citizen
+            angry.</p>
+    </div>
+    <div class="box shadow" id="locations">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/17815-duskwood.jpg" alt="Darkshire">
+            <p class="right">2007/02/23</p>
+        </div>
+        <h2>Darkshire</h2>
+        <p>Main city in this zone. It is Alliance only settlement where are most of the quests and vendors. There is
+            also an inn for travelers to rest.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://i.redd.it/b1qdayjvmyi51.jpg" alt="big graveyard">
+            <p class="right">2008/2/12</p>
+        </div>
+        <h2>Raven hill</h2>
+        <p>Major graveyard in this zone. A lot of deadly dead people and some mage keep rising new undeads. Better to
+            avoid this area.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/86208-duskwood.jpg" alt="small graveyard">
+            <p class="right">2008/07/07</p>
+        </div>
+        <h2>The tranquil gardens cementary</h2>
+        <p>Small cemetery with small amount of undead enemies. Not a big problem for nearby city. Some traveler killed
+            some of the dead people again and it is calm enough.</p>
+    </div>
+    <div class="box shadow" id="citizens">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/42119-felicia-maline.jpg" alt="Felicia Maline">
+            <p class="right">2008/4/16</p>
+        </div>
+        <h2>Felicia Maline</h2>
+        <p>Gryphon Master in Darkshire. Best way to leave or enter this dark zone. It is expensive but safe way to
+            travel with her.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/42148-commander-althea-ebonlocke.jpg"
+                 alt="Commander Althea Ebonlocke">
+            <p class="right">2006/12/8</p>
+        </div>
+        <h2>Commander Althea Ebonlocke</h2>
+        <p>Leader of The Night Watch in city. She have some problems so she can give you a quest sometimes if you are
+            interested.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/43045-watcher-backus.jpg" alt="Watcher Backus">
+            <p class="right">2007/08/31</p>
+        </div>
+        <h2>Watcher Backus</h2>
+        <p>He lost some diplomat and now is looking for someone to find Defias Docket and return it back to Stormwind.
+            If you can please help him.</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/73807-apothecary-faustin.jpg"
+                 alt="Apothecary Faustin">
+            <p class="right">2008/03/04</p>
+        </div>
+        <h2>Apothecary Faustin</h2>
+        <p>Dark alhemist with dark past living alone in destroyed tower in mountains nex to Darkhire. Better just do
+            what he ask you and dont ask questions...</p>
+    </div>
+    <div class="box shadow">
+        <div class="box-image">
+            <img src="https://wow.zamimg.com/uploads/screenshots/normal/42177-chef-grual.jpg" alt="Chef Grual">
+            <p class="right">2007/08/31</p>
+        </div>
+        <h2>Chef Grual</h2>
+        <p>Best cook in the world. He is master of wolf based meals. You have to try what he can do.</p>
+    </div>
+
+</div>
+</body>
+</html>

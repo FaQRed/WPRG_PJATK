@@ -1,0 +1,40 @@
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.child {
+    text-align: center;
+}
+
+
+.flex-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-1, .child-2 {
+    text-align: center;
+}
+
+.child-1 {
+    flex: 2;
+}
+
+.child-2 {
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+

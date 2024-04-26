@@ -1,0 +1,45 @@
+.board {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    text-align: center;
+    font-family: sans-serif;
+    grid-template-areas:
+        ". . . . ."
+        ". . . rd rd"
+        ". prpl . . ."
+        ". prpl aq aq ."
+        ". prpl aq aq ."
+        ". prpl . . ."
+        ". . . . ."
+        "br br br br .";
+
+
+}
+
+.board div {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(237, 232, 177);
+}
+
+.board .red  {
+    background-color: rgb(221, 154, 127);
+    grid-area: rd;
+}
+
+.board .purple {
+    background-color: rgb(230, 230, 248);
+    grid-area: prpl;
+}
+
+.board .aqua {
+    background-color: rgb(187, 233, 234);
+    grid-area: aq;
+}
+
+.board .brown {
+    background-color: rgb(205, 181, 145);
+    grid-area: br;
+}

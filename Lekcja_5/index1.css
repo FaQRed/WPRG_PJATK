@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.child {
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
