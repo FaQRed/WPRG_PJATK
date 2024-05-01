@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page 11</title>
+    <link rel="stylesheet" href="index11.css">
+</head>
+<body>
+<div class="calculator">
+    <h2>Kalkulator zbiorow</h2>
+    <form action="index11.php" method="post">
+        <label for="set1">Zbior A:</label>
+        <input type="text" id="set1" name="set1" placeholder="Liczby oddzielione przecinkami" required><br><br>
+        <label for="set2">Zbior B:</label>
+        <input type="text" id="set2" name="set2" placeholder="Liczby oddzielione przecinkami" required><br><br>
+        <label for="operation">Select Operation:</label>
+        <select id="operation" name="operation" required>
+            <option value="union">Union</option>
+            <option value="intersection">Intersection</option>
+            <option value="difference">Difference (Set1 - Set2)</option>
+            <option value="symmetric_difference">Symmetric Difference</option>
+        </select><br><br>
+        <button type="submit">Oblicz</button>
+    </form>
+</div>
+</body>
+</html>
