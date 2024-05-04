@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Prosty Kalkulator</h2>
+    <form action="calculate_simple.php" method="post">
+        <label for="num1">Liczba 1:</label>
+        <input type="text" id="num1" name="num1" required><br><br>
+
+        <label for="num2">Liczba 2:</label>
+        <input type="text" id="num2" name="num2" required><br><br>
+
+        <label for="operation_lt">Wybierz operację:</label>
+        <select id="operation_lt" name="operation">
+            <option value="add">Dodawanie</option>
+            <option value="subtract">Odejmowanie</option>
+            <option value="multiply">Mnożenie</option>
+            <option value="divide">Dzielenie</option>
+        </select><br><br>
+
+        <input type="submit" value="Oblicz">
+    </form>
+</div>
+
+<hr>
+
+<div class="calculator">
+    <h2>Zaawansowany Kalkulator</h2>
+    <form action="calculate_advanced.php" method="post">
+        <label for="num">Liczba:</label>
+        <input type="text" id="num" name="num" required><br><br>
+
+        <label for="operation_hd">Wybierz operację:</label>
+        <select id="operation_hd" name="operation">
+            <option value="cos">Cosinus</option>
+            <option value="sin">Sinus</option>
+            <option value="tan">Tangens</option>
+            <option value="binToDec">Binarne na dziesiętne</option>
+            <option value="decToBin">Dziesiętne na binarne</option>
+            <option value="decToHex">Dziesiętne na szesnastkowe</option>
+            <option value="hexToDec">Szesnastkowe na dziesiętne</option>
+        </select><br><br>
+
+        <input type="submit" value="Oblicz">
+    </form>
+</div>
+</body>
+</html>
