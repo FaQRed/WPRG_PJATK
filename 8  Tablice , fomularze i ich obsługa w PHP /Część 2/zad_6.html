@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Page 6</title>
 </head>
 <body>
-$END$
+
+<form id="contactForm" action="hello.php" method="post">
+
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="surname">Nazwisko:</label>
+    <input type="text" id="surname" name="surname" required>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Wyślij" id="submit">
+    <input type="reset" value="Reset" id="reset">
+
+</form>
+
+
 </body>
 </html>

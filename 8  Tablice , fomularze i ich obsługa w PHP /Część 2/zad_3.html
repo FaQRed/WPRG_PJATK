@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Page 3</title>
 </head>
 <body>
-$END$
+
+<form id="orderForm" action="#" method="post">
+
+    <label for="product">Produkt:</label>
+    <select id="product" name="product">
+        <option value="t-shirt" id="t-shirt">T-shirt</option>
+        <option value="spodnie" id="spodnie">Spodnie</option>
+    </select>
+
+    <label for="size">Wybierz rozmiar:</label>
+    <select id="size" name="size">
+        <option value="M" id="M">M</option>
+        <option value="L" id="L">L</option>
+    </select>
+
+    <label for="color">Kolor:</label>
+    <input type="color" id="color" name="color">
+
+    <label for="quantity">Ilość:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+    <button type="submit">Złóż zamówienie</button>
+
+</form>
+
 </body>
 </html>
