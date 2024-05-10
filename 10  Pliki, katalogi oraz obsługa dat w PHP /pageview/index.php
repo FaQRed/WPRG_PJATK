@@ -12,13 +12,15 @@ function increaseCounter($file) {
 
 function resetCounter($file) {
     if (file_exists($file)) {
-        file_put_contents($file, 0);
+        file_put_contents($file, -1);
     }
 }
 
 increaseCounter($counterFile);
 if (isset($_POST['reset'])) {
     resetCounter($counterFile);
+    header('Location: index.php' );
+    exit;
 }
 ?>
 
