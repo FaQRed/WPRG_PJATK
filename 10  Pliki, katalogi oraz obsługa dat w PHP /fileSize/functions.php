@@ -10,7 +10,7 @@ function displayFileSize($path)
 
     $formattedSize = formatSize($size);
 
-    return "<p>Rozmiar w różnych jednostkach:</p>
+    return "<p>Wyniki:</p>
             <ul>
                 <li><strong>Bajty:</strong> $size B</li>
                 <li><strong>Kilobajty:</strong> $formattedSize[0] KB</li>
@@ -42,7 +42,7 @@ function formatSize($size)
     $megabytes = $kilobytes / 1024;
     $gigabytes = $megabytes / 1024;
 
-    return array(round($kilobytes, 2), round($megabytes, 2), round($gigabytes, 2));
+    return array($kilobytes, $megabytes, $gigabytes);
 }
 
 
