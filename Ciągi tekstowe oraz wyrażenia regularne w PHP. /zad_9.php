@@ -4,9 +4,11 @@
 $input_numbers = readline();
 
 
-$cleaned_numbers = preg_replace('/[\\\/:*?"<>|+\-.]/', ' ', $input_numbers);
+$unwanted_chars = array('\\', '/', ':', '*', '?', '"', '<', '>', '|', '+', '-', '\'');
 
 
-$cleaned_numbers = preg_replace('/\s+/', ' ', $cleaned_numbers);
-$cleaned_numbers = trim($cleaned_numbers);
-echo $cleaned_numbers;
+$cleaned_sequence = str_replace($unwanted_chars, ' ', $input_numbers);
+
+$result = trim(preg_replace('/\s+/', ' ', $cleaned_sequence));
+
+echo $result;
